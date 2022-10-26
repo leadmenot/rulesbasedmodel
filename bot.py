@@ -8,8 +8,8 @@ import numpy as np
 
 def fetchSheet(sa):
     sheet = sa.open("LeadMeNot Reactive Rules") 
-    worksheet = sheet.worksheet("demo1")
-    worksheet1 = sheet.worksheet("demo2")
+    worksheet = sheet.worksheet("name of sheet to be scanned")
+    worksheet1 = sheet.worksheet("name  if sheet to be copied into")
     rawInfo = worksheet.get_all_values()
     return rawInfo[1:], worksheet, worksheet1
 
